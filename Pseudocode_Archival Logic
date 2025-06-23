@@ -1,0 +1,4 @@
+for record in container.query_items(query="..."):
+    blob_name = f"archive/{record['id']}.json.gz"
+    blob.upload_blob(gzip.compress(json.dumps(record).encode()))
+    container.delete_item(record['id'], partition_key=record['partitionKey'])
