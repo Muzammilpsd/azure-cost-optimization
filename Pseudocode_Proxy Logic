@@ -1,0 +1,5 @@
+try:
+    return cosmos_container.read_item(record_id)
+except NotFound:
+    blob_data = blob_client.download_blob(record_id).readall()
+    return json.loads(gzip.decompress(blob_data))
