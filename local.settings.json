@@ -1,0 +1,9 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "COSMOS_ENDPOINT": "your-endpoint-here",
+    "COSMOS_KEY": "your-key-here",
+    "BLOB_CONN": "your-blob-conn-string"
+  }
+}
